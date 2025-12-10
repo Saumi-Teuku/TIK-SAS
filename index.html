@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #0d0d0d;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Background Image */
+        .bg {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: url('main.jpg') center/cover no-repeat;
+            opacity: 0.35;
+            z-index: -1;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            width: 100%;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            background: rgba(182, 0, 0, 0.4); /* glassy */
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo img {
+            height: 45px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.25s;
+        }
+
+        .nav-links a:hover {
+            color: #ffe88c;
+        }
+
+        /* CONTENT */
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            margin-top: 120px; /* beri jarak dari navbar */
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 14px 35px;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.25s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #fff;
+            color: #000;
+        }
+        /* Footer selalu di bawah */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+    background: rgba(255, 255, 255, 0.01);
+    color: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+        }
+        /* TEXT RAHASIA */
+        .secret {
+            opacity: 0;
+            font-size: 12px;
+            margin-top: 3px;
+            transition: opacity 0.3s ease;
+        }
+
+.footer:hover {
+    background: rgba(255, 255, 255, 0.72);
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="bg"></div>
+
+    <!-- NAVBAR -->
+	<nav class="navbar">
+    		<div class="logo" id="logoBtn">
+			<img src="logo.png" alt="Logo">
+		</div>
+    		<ul class="nav-links">
+        	 <li><a href="index.html">Home</a></li>
+        	 <li><a href="hero list.html">Top Hero</a></li>
+        	 <li><a href="profile.html">Author Profile </a></li>
+        	 <li><a href="#about">About</a></li>
+    		</ul>
+	</nav>
+
+    <!-- CONTENT -->
+    <div class="container" id="home">
+
+        <p>
+Di dunia yang penuh dengan pahlawan cemerlang, kepercayaan penggemarlah yang mengubah pahlawan menjadi superhero. Jika seorang pahlawan kehilangan kepercayaan rakyat, mereka kehilangan kemampuan istimewanya. Nilai kepercayaan dikumpulkan, dikalkulasi, dan kemudian digunakan untuk menentukan peringkat seorang pahlawan, yang ditampilkan di pergelangan tangan mereka. Setiap dua tahun, para pahlawan teratas mengikuti turnamen untuk bertarung, menentukan nilai kepercayaan baru, dan mendapatkan peringkat mereka.
+        </p>
+
+        <a href="hero list.html" class="btn">MASUK</a>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+     ©Teuku zuhayru Saumi 12 saintek A chatgpt
+	<div class="secret">⭐ Bukan manusia yg butuh AI, melainkan AI yg butuh manusia ⭐</div>
+    </div>
+</body>
+</html>
