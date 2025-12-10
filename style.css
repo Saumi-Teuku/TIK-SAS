@@ -1,0 +1,266 @@
+/* FONT */
+body, .name, .rank, .value {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* BODY */
+body {
+    background: #0d0d0d;
+    font-family: "Poppins", sans-serif;
+    padding: 40px;
+}
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+}
+
+#bg-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;   /* mengambang di atas */
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    background: rgba(182, 0, 0, 0.4); /* glassy */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo img {
+    height: 35px;     /* atur ukuran */
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+.nav-links a:hover {
+    color: #ffe88c;
+}
+
+/* TITLE */
+.title {
+    position: relative;
+    top: 0px;     /* jarak dari atas */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: #ffe88c;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CARD WRAPPER */
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* semua card vertikal */
+    align-items: center;    /* card tetap ditengah */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+
+/* CARD */
+.card {
+    width: 480px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 0.5px solid rgba(255, 223, 0, 0.85);
+    /* efek glass */
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(12px);
+
+    /* outline bercahaya */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.45);
+
+    /* animasi hover */
+    transition: 0.35s;
+}
+
+.x {
+   background: rgba(182, 0, 0, 0.4);
+}
+.x:hover {
+    box-shadow: 0 0 70px rgba(255, 255, 255, 0.45);
+}
+/* GLOW BIRU */
+.glow-blue {
+    box-shadow: 0 0 25px rgba(255, 223, 0, 0.45);
+}
+.glow-blue:hover {
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.45);
+}
+
+/* GLOW UNGU */
+.glow-purple {
+    box-shadow: 0 0 25px rgba(255, 223, 0, 0.45);
+}
+.glow-purple:hover {
+    box-shadow: 0 0 35px rgba(174, 0, 234, 0.99);
+}
+
+/* GLOW EMAS */
+.glow-gold {
+    box-shadow: 0 0 25px rgba(255, 223, 0, 0.25);
+}
+.glow-gold:hover {
+    box-shadow: 0 0 35px rgba(255, 223, 0, 0.45);
+}
+
+/* GLOW MERAH */
+.glow-red {
+    box-shadow: 0 0 25px rgba(255, 223, 0, 0.45);
+}
+.glow-red:hover {
+    box-shadow: 0 0 35px rgba(255, 80, 80, 0.45);
+}
+
+/* GLOW PINK */
+.glow-pink {
+    box-shadow: 0 0 25px rgba(251, 30, 144, 0.5);
+}
+.glow-pink:hover {
+    box-shadow: 0 0 35px rgba(251, 30, 144, 1.0);
+}
+
+/* GLOW orange */
+.glow-orange {
+    box-shadow: 0 0 25px rgba(255, 136, 0, 0.62);
+}
+.glow-orange:hover {
+    box-shadow: 0 0 35px rgba(255, 136, 0, 1.0);
+}
+
+/* Hover naik + glow pelangi*/
+
+@keyframes rainbowGlowHover {
+    0%   { box-shadow: 0 0 35px rgba(255, 0, 0, 0.7); }
+    16%  { box-shadow: 0 0 35px rgba(255, 127, 0, 0.7); }
+    33%  { box-shadow: 0 0 35px rgba(255, 255, 0, 0.7); }
+    50%  { box-shadow: 0 0 35px rgba(0, 255, 0, 0.7); }
+    66%  { box-shadow: 0 0 35px rgba(0, 191, 255, 0,7); }
+    83%  { box-shadow: 0 0 35px rgba(135, 0, 255, 0.7); }
+    100% { box-shadow: 0 0 35px rgba(255, 0, 255, 0.7); }
+}
+
+/* class tambahan */
+.glow-rainbow-hover:hover {
+    animation: rainbowGlowHover 1.5s infinite linear;
+}
+
+/* Hover naik + glow */
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+
+/* Gambar karakter */
+.character-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+/* Info */
+.card-content {
+    margin-left: 15px;
+    z-index: 2;
+}
+
+.rank {
+    font-size: 60px;
+    font-weight: 900;
+    color: #ffe88c;
+    text-shadow: 0 0 12px rgba(255, 231, 120, 0.6);
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: -10px;
+    color: white;
+}
+
+.value {
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.7;
+    color: white;
+}
+
+/* Efek diagonal cahaya */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(45deg, rgba(255,255,255,0.06), rgba(0,0,0,0));
+    transform: rotate(25deg);
+    z-index: 1;
+}
+        /* Footer selalu di bawah */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+    background: rgba(255, 255, 255, 0.01);
+    color: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.02);
+        }
+        /* TEXT RAHASIA */
+        .secret {
+            opacity: 0;
+            font-size: 12px;
+            margin-top: 3px;
+            transition: opacity 0.3s ease;
+        }
+
+.footer:hover {
+    background: rgba(255, 255, 255, 0.72);
+    color: white;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character List</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="intro.css">
+</head>
+
+<body>
+
+    <!-- Background Video -->
+    <div id="bg-video">
+        <video autoplay muted loop playsinline>
+            <source src="tbhx op.mp4" type="video/mp4">
+        </video>
+    </div>
+
+	<nav class="navbar">
+    		<div class="logo" id="logoBtn">
+			<img src="logo.png" alt="Logo">
+		</div>
+    		<ul class="nav-links">
+        	 <li><a href="home.html">Home</a></li>
+        	 <li><a href="hero list.html">Top Hero</a></li>
+        	 <li><a href="profile.html">Author Profile </a></li>
+        	 <li><a href="#about">About</a></li>
+    		</ul>
+	</nav>
+
+    <!-- TITLE -->
+    <h1 class="title">TOP 10 HERO LIST</h1>
+
+    <!-- CARD WRAPPER -->
+    <div class="card-container">
+
+    <a href="detail x.html" class="card-link">
+        <div class="card x">
+            <img src="x.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">1</div>
+                <div class="name">X</div>
+                <div class="value">CV :Mamoru Miyano</div>
+            </div>
+        </div>
+     </a>
+
+    <a href="detail queen.html" class="card-link">
+        <div class="card glow-gold">
+            <img src="queen.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">2</div>
+                <div class="name">Queen</div>
+                <div class="value">CV : Kana Hanazawa</div>
+            </div>
+        </div>
+    </a>
+
+    <a href="detail dragon.html" class="card-link">
+        <div class="card glow-purple">
+            <img src="Dragon.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">3</div>
+                <div class="name">Dragon Boy</div>
+                <div class="value">CV : Koki Uchiyama</div>
+            </div>
+        </div>
+     </a>
+
+    <a href="detail ghost.html" class="card-link">
+        <div class="card glow-gold">
+            <img src="ghost.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">4</div>
+                <div class="name">Ghost Blade</div>
+                <div class="value">CV : Yuichi Nakamura</div>
+            </div>
+        </div>
+     </a>
+
+    <a href="detail jhonny.html" class="card-link">
+        <div class="card glow-orange">
+            <img src="jhonny.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">5</div>
+                <div class="name">The Jhonnies</div>
+                <div class="value">CV : Yoshitsugu Matsuoka</div>
+            </div>
+        </div>
+    </a>
+
+    <a href="detail loli.html" class="card-link">
+        <div class="card glow-pink">
+            <img src="loli.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">6</div>
+                <div class="name">Loli</div>
+                <div class="value">CV : Ayane Sakura</div>
+            </div>
+        </div>
+    </a>
+
+    <a href="detail lucky.html" class="card-link">
+        <div class="card glow-blue">
+            <img src="luckycyan.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">7</div>
+                <div class="name">Lucky Cyan</div>
+                <div class="value">CV : Inori Minase</div>
+            </div>
+        </div>
+
+    <a href="detail ahu.html" class="card-link">
+        <div class="card glow-gold">
+            <img src="ahu.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">8</div>
+                <div class="name">Ahu</div>
+                <div class="value">CV : Koichi Yamadera</div>
+            </div>
+        </div>
+
+    <a href="detail esoul.html" class="card-link">
+        <div class="card glow-blue">
+            <img src="esoul.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">9</div>
+                <div class="name">E-Soul</div>
+                <div class="value">CV : Nobunaga Shimazaki</div>
+            </div>
+        </div>
+
+
+    <a href="detail nice.html" class="card-link">
+        <div class="card glow-red glow-rainbow-hover">
+            <img src="nice.jpg" class="character-img">
+            <div class="card-content">
+                <div class="rank">?</div>
+                <div class="name">Nice</div>
+                <div class="value">CV : Natsuki Hanae</div>
+            </div>
+        </div>
+
+    <a href="detail linling.html" class="card-link">
+        <div class="card glow-red glow-rainbow-hover">
+            <img src="commoner.png" class="character-img">
+            <div class="card-content">
+                <div class="rank">10</div>
+                <div class="name">The Commoner</div>
+                <div class="value">CV : Natsuki Hanae
+</div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+       © Teuku zuhayru Saumi 12 saintek A chatgpt
+	<div class="secret">⭐ Bukan manusia yg butuh AI, melainkan AI yg butuh manusia ⭐</div>
+    </div>
+<script>
+window.addEventListener("load", () => {
+    // pastikan mulai dari bawah halaman
+    window.scrollTo(0, document.body.scrollHeight);
+
+    const duration = 2000; // durasi scroll n/1000 detik
+    const start = window.scrollY;
+    const end = 0; // target scroll ke atas
+    const startTime = performance.now();
+
+    function scrollUp(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        window.scrollTo(0, start + (end - start) * progress);
+
+        if (progress < 1) {
+            requestAnimationFrame(scrollUp);
+        }
+    }
+
+    requestAnimationFrame(scrollUp);
+});
+</script>
+<script>
+const video = document.querySelector("#bg-video video");
+const logo = document.getElementById("logoBtn");
+
+logo.addEventListener("click", () => {
+    if (video.muted) {
+        video.muted = false; // unmute
+        video.play();
+    } else {
+        video.muted = true; // mute kembali
+    }
+});
+</script>
+
+</body>
+</html>

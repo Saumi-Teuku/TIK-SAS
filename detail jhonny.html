@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Detail</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: #0d0d0d;
+            margin: 0;
+            padding: 40px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+        }
+
+	/* BACKGROUND IMAGE */
+	.bg-img {
+  	  position: fixed;
+   	 top: 0;
+   	 left: 0;
+    	width: 100%;
+    	height: 100%;
+   	 background: url("chara_thumb5.jpg") center/cover no-repeat;
+    	filter: brightness(40%) blur(2px);
+   	 z-index: -2;
+	}
+        /* BACK BUTTON */
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(0,0,0,0.5);
+            border: 1px solid #ffe88c;
+            border-radius: 8px;
+            color: #ffe88c;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: 0.3s;
+            backdrop-filter: blur(6px);
+        }
+        .back-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #ffe88c;
+        }
+
+        /* CONTENT WRAPPER */
+        .detail-wrapper {
+            margin-top: 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            gap: 30px;
+        }
+
+        /* IMAGE */
+        .detail-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 25px rgba(255,255,255,0.25);
+        }
+
+        /* INFO */
+        .info-box {
+            background: rgba(0, 0, 0, 0.65);
+            backdrop-filter: blur(12px);
+            padding: 25px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 223, 0, 0.5);
+            box-shadow: 0 0 30px rgba(255,255,255,0.3);
+        }
+
+        .rank {
+            font-size: 70px;
+            font-weight: 900;
+            color: #ffe88c;
+            text-shadow: 0 0 12px rgba(255, 231, 120, 0.6);
+            margin: 0;
+        }
+        .name {
+            font-size: 36px;
+            margin: -10px 0 20px 0;
+            letter-spacing: 2px;
+        }
+
+        .desc {
+            font-size: 16px;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="bg-img"></div>
+
+
+    <!-- Back -->
+    <a href="hero list.html" class="back-btn">← BACK</a>
+
+    <!-- DETAIL CONTENT -->
+    <div class="detail-wrapper">
+
+        <!-- IMAGE -->
+        <img src="jhonny.png" class="detail-img">
+
+        <!-- INFO -->
+        <div class="info-box">
+            <h1 class="rank">5</h1>
+            <h2 class="name">The Johnnies</h2>
+            <p class="desc">
+Little Johnny ramah, sosial, dan lugu, seperti yang terlihat saat dia memperkenalkan dirinya. Ketika dia pergi berbicara dengan Queen, dia memberinya Big Johnny untuk dimainkan dan segera mengundangnya ke lantainya di Hero Tower. Saat bertemu Lucky Cyan untuk pertama kalinya, dia bersikap ramah kepadanya dan memberinya Big Johnny untuk dibelai. Dia bertanya kepada Lucky Cyan apakah dia bisa menggunakan kekuatannya untuk memberkati Queen sehingga dia bisa mengalahkan Bowa. Dia juga satu-satunya yang bisa menenangkan Big Johnny ketika yang terakhir menjadi marah setelah menggunakan kekuatannya.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

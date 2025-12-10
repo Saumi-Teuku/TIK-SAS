@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column; /* Supaya bisa dorong footer ke bawah */
+            justify-content: center;
+            align-items: center;
+            background: #f2f2f2;
+            font-family: 'Poppins', sans-serif;
+        }
+.navbar {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;   /* mengambang di atas */
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    background: rgba(182, 0, 0, 0.4); /* glassy */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo img {
+    height: 35px;     /* atur ukuran */
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.25s;
+}
+
+.nav-links a:hover {
+    color: #ffe88c;
+}
+
+
+        .card {
+            width: 330px;
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1c92d2;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin: 10px 0 5px;
+            font-size: 22px;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .small-text {
+            margin-top: 8px;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        /* Footer selalu di bawah */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            background: #eaeaea;
+            color: #333;
+            font-size: 14px;
+            border-top: 1px solid #ccc;
+        }
+        /* TEXT RAHASIA */
+        .secret {
+            opacity: 0;
+            font-size: 12px;
+            margin-top: 3px;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer:hover .secret {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+<body>
+	<nav class="navbar">
+    		<div class="logo" id="logoBtn">
+			<img src="logo.png" alt="Logo">
+		</div>
+    		<ul class="nav-links">
+        	 <li><a href="home.html">Home</a></li>
+        	 <li><a href="hero list.html">Top Hero</a></li>
+        	 <li><a href="profile.html">Author Profile </a></li>
+        	 <li><a href="#about">About</a></li>
+    		</ul>
+	</nav>
+    <div class="card">
+        <img src="saumi.jpg" alt="Foto Profil">
+        <h2>Teuku Zuhayru Saumi</h2>
+        <p>Manusia | Pelajar</p>
+        <p class="small-text">Kalah Kalah Kalah Kalah Kalah Menang</p>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+     ©Teuku zuhayru Saumi 12 saintek A chatgpt
+	<div class="secret">⭐ Bukan manusia yg butuh AI, melainkan AI yg butuh manusia ⭐</div>
+    </div>
+
+</body>
+</html>
